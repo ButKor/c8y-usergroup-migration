@@ -75,7 +75,7 @@ Script is using exit codes to indicate its success. Exit Code is also printed to
 
 Script is creating one audit log entry in the tenant once it starts:
 
-````json
+```json
 {
   "activity": "Devices-Usergroup-Migration script runtime",
   "creationTime": "2023-10-16T19:02:10.522Z",
@@ -91,7 +91,7 @@ Script is creating one audit log entry in the tenant once it starts:
 
 ...and another one once it finishes:
 
-````json
+```json
 {
   "activity": "Devices-Usergroup-Migration script runtime",
   "creationTime": "2023-10-16T19:02:12.878Z",
