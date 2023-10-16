@@ -102,7 +102,7 @@ fi
 # Log execution in audit log
 log "Creating Audit Record to log script execution ..." "INF"
 c8y auditrecords create --severity information --source "n.a." --type migrationScriptRuntime \
-  --text "Devices-Usergroup-Migration script started." \
+  --text "Devices-Usergroup-Migration script started" \
   --activity "Devices-Usergroup-Migration script runtime" -f >"/sessions/${tenant_id}_auditLogs.json" 2>&1
 code=$?
 if [ $code -ne 0 ]; then

@@ -82,7 +82,7 @@ Script is creating one audit log entry in the tenant once it starts:
   "id": "162877460",
   "self": "https://t1234.eu-latest.cumulocity.com/audit/auditRecords/162877460",
   "severity": "information",
-  "text": "Devices-Usergroup-Migration script started.",
+  "text": "Devices-Usergroup-Migration script started",
   "time": "2023-10-16T19:02:08.377Z",
   "type": "migrationScriptRuntime",
   "user": "korbinian.butz@softwareag.com"
