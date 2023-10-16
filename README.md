@@ -51,8 +51,7 @@ The following environment variables need to be set in your vars.env:
 | `C8Y_PASSWORD`                     | Your super secret password (for example: "my-secret-pass")                                                                    |
 | `C8Y_SETTINGS_CI`                  | Disables all prompts, leave this `true`                                                                                       |
 | `RT_NEW_GROUP_NAME`                | The name of your new user role (for example: "devices replica")                                                               |
-| `RT_DELETE_NEWUSERGROUP_IF_EXISTS` | This variable defines what should happen in case there is already a user role with the desired new group name in  the tenant: |
-
+| `RT_DELETE_NEWUSERGROUP_IF_EXISTS` | This variable defines what should happen in case there is already a user role with the desired new group name in  the tenant: 
 -   When set to "true"/"TRUE", the script will remove the old one and recreate it based on 'devices' role (useful for testing)
 -   When set to "false"/"FALSE", the script will abort migration and not touch this tenant (preferred for production) |
 
