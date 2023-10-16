@@ -61,15 +61,15 @@ Script is using exit codes to indicate its success. Exit Code is also printed to
 
 | Exit Code | Description                                                                     |
 |-----------|---------------------------------------------------------------------------------|
-| 0         | Migration was needed and done"                                                  |
-| 100       | No devices role in this tenant, nothing to migrate"                             |
-| 101       | No users with devices role in tenant, nothing to migrate"                       |
-| 102       | New-Role already existing and should not be re-created"                         |
-| 200       | Issue with input parameters"                                                    |
-| 201       | Connectivity issue to platform"                                                 |
-| 202       | Devices role has applications assigned, to be fixed manually before migration." |
-| 203       | An error occured while searching for users with devices role"                   |
-| 204       | User not having required permissions"                                           |
+| 0         | Migration was needed and done                                                   |
+| 100       | No devices role in this tenant, nothing to migrate                              |
+| 101       | No users with devices role in tenant, nothing to migrate                        |
+| 102       | New-Role already existing and should not be re-created                          |
+| 200       | Issue with input parameters                                                     |
+| 201       | Connectivity issue to platform                                                  |
+| 202       | Devices role has applications assigned, to be fixed manually before migration.  |
+| 203       | An error occured while searching for users with devices role                    |
+| 204       | User not having required permissions                                            |
 
 (Rule: 0 = success, 1XX tenant not in migration scope, 2XX errors to take care of)
 
