@@ -43,17 +43,15 @@ Navigate with a shell session towards the current directory and execute: `docker
 
 The following environment variables need to be set in your vars.env:
 
-| Variable                           | Description                                                                                                                   |
-| ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| `C8Y_HOST`                         | The URL towards your tenant (for example: ")                                           |
-| `C8Y_TENANT`                       | The Tenant ID (for example: "t1234")                                                                                          |
-| `C8Y_USER`                         | Your username without tenant-id prefixed (for example: "korbinian.butz@softwareag.com")                                       |
-| `C8Y_PASSWORD`                     | Your super secret password (for example: "my-secret-pass")                                                                    |
-| `C8Y_SETTINGS_CI`                  | Disables all prompts, leave this `true`                                                                                       |
-| `RT_NEW_GROUP_NAME`                | The name of your new user role (for example: "devices replica")                                                               |
-| `RT_DELETE_NEWUSERGROUP_IF_EXISTS` | This variable defines what should happen in case there is already a user role with the desired new group name in  the tenant: 
--   When set to "true"/"TRUE", the script will remove the old one and recreate it based on 'devices' role (useful for testing)
--   When set to "false"/"FALSE", the script will abort migration and not touch this tenant (preferred for production) |
+- `C8Y_HOST`: The URL towards your tenant (for example: "https://eos.eu-latest.cumulocity.com")
+- `C8Y_TENANT`: The Tenant ID (for example: "t1234")
+- `C8Y_USER`: Your username without tenant-id prefixed (for example: "korbinian.butz@softwareag.com")
+- `C8Y_PASSWORD`: Your super secret password (for example: "my-secret-pass")
+- `C8Y_SETTINGS_CI`: Disables all prompts, leave this `true`
+- `RT_NEW_GROUP_NAME`: The name of your new user role (for example: "devices replica")
+- `RT_DELETE_NEWUSERGROUP_IF_EXISTS`: This variable defines what should happen in case there is already a user role with the desired new group name in the tenant:
+  - When set to "true"/"TRUE", the script will remove the old one and recreate it based on 'devices' role (useful for testing)
+  - When set to "false"/"FALSE", the script will abort migration and not touch this tenant (preferred for production)
 
 All stated environment variables are mandatory.
 
